@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import CityDropDown from "./CityDropDown";
-import icons from "../assets/icons.png";
+import icons from "../assets/Icons.png";
 import { useAppDispatch } from "../redux/store/store";
 import { useCitySearch } from "../hook/useCitySearch";
 import {
