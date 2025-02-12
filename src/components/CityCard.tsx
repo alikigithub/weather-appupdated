@@ -21,12 +21,10 @@ import { weatherDetails } from "../type/type";
 
 const CityCard = () => {
   const data: weatherDetails | null = useWeather();
-  console.log("==========================", data);
   const unit: string = useAppSelector(
     (state: AppRootState) => state.weatherReview.unit
   );
   const { temChange, converter } = useTemprature();
-  // console.log(data.todayWeather);
   const background: Record<string, string> = {
     "01d": o01d,
     "01n": o01n,
@@ -57,7 +55,6 @@ const CityCard = () => {
       case "50n":
         return "13n";
       default:
-        console.log(value);
         return value;
     }
   };

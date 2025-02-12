@@ -18,14 +18,12 @@ const useWeather = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
     if (!isNaN(latitude) && !isNaN(longitude)) {
-      console.log(latitude, longitude);
       dispatch(fetchWeatherDetail({ lat: latitude, long: longitude }));
     }
   }, [latitude, longitude, dispatch]);
 
   const detailOfWeather = useSelector(selectWeatherDetail);
 
-  console.log(detailOfWeather);
   return detailOfWeather;
 };
 

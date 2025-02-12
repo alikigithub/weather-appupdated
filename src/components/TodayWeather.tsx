@@ -10,7 +10,6 @@ import WeatherForcast from "./WeatherForcast";
 
 const TodayWeather = () => {
   const Weather: weatherDetails | null = useWeather();
-  console.log(Weather);
   const dailyWeather: todayForcast | null = Weather?.todayWeather ?? null;
   const unit: string = useSelector(
     (state: { weatherReview: { unit: string } }) => state.weatherReview.unit

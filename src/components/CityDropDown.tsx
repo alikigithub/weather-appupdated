@@ -16,10 +16,6 @@ const CityDropDown = ({
   }: { dropDown: boolean; citylist: CityList; isApiAvaiable: string } =
     useCitySearch();
 
-  console.log(citylist);
-  console.log(dropDown);
-  console.log(isApiAvaiable);
-
   return (
     <div className="mt-2 ">
       {dropDown == true && citylist && citylist.length > 0 ? (

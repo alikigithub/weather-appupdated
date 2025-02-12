@@ -1,4 +1,3 @@
-// apiService.ts
 import axiosInstance from "./axiosInstance";
 
 export const getCityDetail = async (lat: number, lon: number) => {
@@ -10,7 +9,7 @@ export const getCityDetail = async (lat: number, lon: number) => {
       },
     });
     return response.data;
-  } catch (error) {
+  } catch {
     throw new Error("Failed to Fetch City Detail");
   }
 };
