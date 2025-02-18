@@ -1,4 +1,4 @@
-import axiosInstance from "./axiosInstance";
+import axiosInstance from "../utils/axiosInstance";
 
 export const getCityDetail = async (lat: number, lon: number) => {
   try {

@@ -1,12 +1,3 @@
-// export type citylist = {
-//   name: string;
-//   lat: number;
-//   lon: number;
-//   country: string;
-//   state: string;
-//   length: number;
-//   // map: (callback: (cities: string, index: number) => Component) => Component[];
-// };
 export type City = {
   name: string;
   lat: number;
@@ -48,10 +39,10 @@ export type weatherEntry = {
 };
 export type weatherDetails = {
   cityname: string;
-  curretnTime: string; // Typo: Should be `currentTime`
+  curretnTime: string;
   country: string;
   fulldate: string;
-  temprature: string; // Typo: Should be `temperature`
+  temprature: string;
   maxTem: string;
   minTem: string;
   description: string;
@@ -147,7 +138,6 @@ export type WeatherDataDetailsWise = {
   city: City;
 };
 
-
 export type Forecasting = {
   dt: number;
   main: {
@@ -217,9 +207,9 @@ export type Location = {
 
 export type Locations = Location[];
 export type CityListState = {
-  citylist: City[]; // An array of City objects (empty in this case)
-  isApiAvaiable: string; // A string representing API status ("pending")
-  cityName: string | null; // Can be a string or null
-  loading: boolean; // A boolean indicating if data is loading
-  dropDown: boolean; // A boolean for dropdown state
+  citylist: City[];
+  isApiAvaiable: string;
+  cityName: string | null;
+  loading: boolean;
+  dropDown: boolean;
 };

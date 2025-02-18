@@ -14,7 +14,6 @@ export const weatherDataFormat = (weatherData: WeatherDataDetailsWise) => {
     "Friday",
     "Saturday",
   ];
-  console.log(weatherData);
   const nextDays: { [key: string]: forcast } = {};
   weatherData.list.forEach((data) => {
     const date = new Date(data.dt * 1000);

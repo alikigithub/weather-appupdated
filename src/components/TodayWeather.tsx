@@ -41,11 +41,11 @@ const TodayWeather = () => {
                 <p className="text-[16px] text-BaseGray">
                   {converter(dailyWeather?.feelslike ?? 0, toogleUnit)?.toFixed(
                     0
-                  )}{" "}
+                  )}
                   &#176;{unit}
                 </p>
               </div>
-            </li>{" "}
+            </li>
             <li className="w-full h-[56px]   border-b-[1px] border-darkgray flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img
@@ -54,7 +54,7 @@ const TodayWeather = () => {
                   alt="weather-icon"
                 />
                 <p className="md:text-[15px] text-[14px] text-BaseGray">
-                  Probability of Rain{" "}
+                  Probability of Rain
                 </p>
               </div>
               <div>
@@ -62,7 +62,7 @@ const TodayWeather = () => {
                   <p>{dailyWeather?.rain} % </p>
                 </p>
               </div>
-            </li>{" "}
+            </li>
             <li className="w-full h-[56px]   border-b-[1px] border-darkgray flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img
@@ -79,7 +79,7 @@ const TodayWeather = () => {
                   <p>{dailyWeather?.wind?.toFixed(0) ?? 0} km/h </p>
                 </p>
               </div>
-            </li>{" "}
+            </li>
             <li className="w-full h-[56px]    flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img

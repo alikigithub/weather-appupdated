@@ -11,16 +11,16 @@ const CityDropDown = ({
 }) => {
   const {
     dropDown,
-    citylist,
+    cityList,
     isApiAvaiable,
-  }: { dropDown: boolean; citylist: CityList; isApiAvaiable: string } =
+  }: { dropDown: boolean; cityList: CityList; isApiAvaiable: string } =
     useCitySearch();
 
   return (
     <div className="mt-2 ">
-      {dropDown == true && citylist && citylist.length > 0 ? (
+      {dropDown == true && cityList && cityList.length > 0 ? (
         <div className="absolute z-10">
-          {citylist.map((cities: City, index: number) => (
+          {cityList?.map((cities: City, index: number) => (
             <DropDownData
               cities={cities}
               index={index}

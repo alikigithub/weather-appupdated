@@ -8,8 +8,6 @@ const WeatherForcast = () => {
   const data: weatherDetails | null = useWeather();
   const data1 = data?.nextDays || {};
   const [screenResulation, setscreenResulation] = useState<number>();
-  console.log(screenResulation);
-  console.log(data1);
   const { converter } = useTemprature();
   const unit: string = useAppSelector((state) => state.weatherReview.unit);
   useEffect(() => {

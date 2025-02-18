@@ -2,7 +2,7 @@ import { useAppSelector } from "../redux/store/store";
 import { CityList } from "../type/type";
 
 export const useCitySearch = () => {
-  const citylist: CityList = useAppSelector(
+  const cityList: CityList = useAppSelector(
     (state) => state.citySearchData.citylist
   );
   const isApiAvaiable: string = useAppSelector(
@@ -17,6 +17,5 @@ export const useCitySearch = () => {
   const dropDown: boolean = useAppSelector(
     (state) => state.citySearchData.dropdown
   );
-  console.log(citylist);
-  return { citylist, isApiAvaiable, cityName, loading, dropDown };
+  return { cityList, isApiAvaiable, cityName, loading, dropDown };
 };
