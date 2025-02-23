@@ -12,8 +12,8 @@ import { useHandleKeys } from "../hook/useHandleKeys";
 
 const InputBox = () => {
   const dispatch = useAppDispatch();
-  const { cityName, citylist, loading } = useCitySearch();
-  const { handleIndex, sethandleIndex, handlekeys } = useHandleKeys(citylist);
+  const { cityName, cityList, loading } = useCitySearch();
+  const { handleIndex, sethandleIndex, handlekeys } = useHandleKeys(cityList);
 
   const getCityValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.trim();

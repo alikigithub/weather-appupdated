@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { getcity } from "../../../aPI/citySearch";
+import { getcity } from "../../../api/citySearch";
 import { cityDataSearch, CityList } from "../../../type/type";
 
 export const fetchCityData = createAsyncThunk(

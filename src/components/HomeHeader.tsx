@@ -7,7 +7,7 @@ const HomeHeader = () => {
       </header>
       <section className="mt-40 text-center">
         <h1 className="font-[Nunito] font-bold text-gray md:text-[32px] text-[20px]">
-          Welcome to <span className="md:text-bluelight">Weathasser App</span>
+          Welcome to <span className="md:text-bluelight">Weather App</span>
         </h1>
         <p className="text-BaseGray mb-10 text-[14px]">
           Chose a location to see weatasher Forcast
