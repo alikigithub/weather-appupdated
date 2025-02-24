@@ -12,7 +12,7 @@ export const fetchWeatherDetail = createAsyncThunk(
       );
       return weatherData;
     } catch (error) {
-      throw new Error(`Api Failed to Fetch, ${error}`);
+      throw new Error(`Api Faile to Fetch, ${error}`);
     }
   }
 );
