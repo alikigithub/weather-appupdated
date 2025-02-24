@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { weatherDataFormat } from "../../../formating/weatherformating";
 import { weatherDetails, WeatherDataDetailsWise } from "../../../type/type";
-import { getCityDetail } from "../../../api/cityDetail";
+import getCityDetail from "../../../api/cityDetail";
 export const fetchWeatherDetail = createAsyncThunk(
   "weather/fetchWeatherDetail",
   async ({ lat, long }: { lat: number; long: number }) => {

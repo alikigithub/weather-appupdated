@@ -1,5 +1,5 @@
 import axiosCityInstance from "../utils/axiosCityInstance";
-export const getcity = async (city: string) => {
+const getcity = async (city: string) => {
   try {
     const response = await axiosCityInstance.get("/geo/1.0/direct", {
       params: {
@@ -13,3 +13,4 @@ export const getcity = async (city: string) => {
     throw new Error(`Failed to fetch city data, ${error}`);
   }
 };
+export default getcity;
