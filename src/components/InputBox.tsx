@@ -18,7 +18,7 @@ const InputBox = () => {
   const getCityValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.trim();
     dispatch(inputData(value));
-    dispatch(dropDownShow(value.length > 0));
+    dispatch(dropDownShow(value?.length > 0));
   };
 
   useEffect(() => {

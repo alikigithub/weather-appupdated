@@ -14,24 +14,24 @@ export const useHandleKeys = (citylist: CityList) => {
   const navigate = useNavigate();
 
   const handlekeys = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!citylist || citylist.length === 0) return;
+    if (!citylist || citylist?.length === 0) return;
 
     if (e.key === "ArrowDown") {
-      sethandleIndex((prev) => (prev + 1) % citylist.length);
+      sethandleIndex((prev) => (prev + 1) % citylist?.length);
     } else if (e.key === "ArrowUp") {
-      sethandleIndex((prev) => (prev === 0 ? citylist.length - 1 : prev - 1));
+      sethandleIndex((prev) => (prev === 0 ? citylist?.length - 1 : prev - 1));
     } else if (e.key === "Enter") {
       if (handleIndex > -1) {
         const selectedCity = citylist[handleIndex];
         dispatch(
           inputData(
-            `${selectedCity.name},${selectedCity.state},${selectedCity.country}`
+            `${selectedCity?.name},${selectedCity?.state},${selectedCity?.country}`
           )
         );
         dispatch(loadingShow(true));
 
         setTimeout(() => {
-          navigate(`/${selectedCity.lat},${selectedCity.lon}`);
+          navigate(`/${selectedCity?.lat},${selectedCity?.lon}`);
           dispatch(dropDownShow(false));
           dispatch(loadingShow(false));
           dispatch(inputData(""));

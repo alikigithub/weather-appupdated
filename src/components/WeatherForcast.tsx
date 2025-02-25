@@ -16,11 +16,11 @@ const WeatherForcast = () => {
           5 Day Forecast
         </p>
       </div>
-      {Object.keys(data1).length === 0 ? (
+      {Object.keys(data1)?.length === 0 ? (
         <p>Loading....</p>
       ) : (
         <div className="flex md:justify-between justify-center md:w-[582px] md:h-[212px] h-[full] md:p-4 p-2 items-center">
-          {Object.keys(data1).map((day, index) => (
+          {Object.keys(data1)?.map((day, index) => (
             <div
               key={day}
               className="xl:w-[146px] lg:w-[116px] md:w-[60px] h-[212px] flex flex-col items-center text-center justify-center"
@@ -36,18 +36,18 @@ const WeatherForcast = () => {
               </p>
               <img
                 className="block h-[67px] w-[67px] mt-4"
-                src={data1[day].icon}
+                src={data1[day]?.icon}
               />
               <p className="text-[14px] text-BaseGray mt-2 xl:block lg:block md:hidden hidden">
-                {data1[day].description}
+                {data1[day]?.description}
               </p>
               <div className="flex md:flex-row flex-col xl:gap-2 lg:gap-2 md:gap-0 justify-center w-full">
                 <p className="text-[14px] text-headingGray">
-                  {converter(data1[day].max_tem, unit)}&#176;{unit}
+                  {converter(data1[day]?.max_tem, unit)}&#176;{unit}
                 </p>
                 <span className="text-headingGray md:hidden inline">/</span>
                 <p className="text-[14px] text-headGray md:ml-2">
-                  {converter(data1[day].min_tem, unit)}&#176;{unit}
+                  {converter(data1[day]?.min_tem, unit)}&#176;{unit}
                 </p>
               </div>
             </div>

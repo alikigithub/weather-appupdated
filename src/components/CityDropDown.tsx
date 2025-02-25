@@ -18,7 +18,7 @@ const CityDropDown = ({
 
   return (
     <div className="mt-2 ">
-      {dropDown == true && cityList && cityList.length > 0 ? (
+      {dropDown == true && cityList && cityList?.length > 0 ? (
         <div className="absolute z-10">
           {cityList?.map((cities: City, index: number) => (
             <DropDownData

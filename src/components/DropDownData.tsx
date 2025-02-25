@@ -19,11 +19,13 @@ const DropDownData = ({
   const handleCitySelection = () => {
     if (!cities) return;
 
-    dispatch(inputData(`${cities.name}, ${cities.state}, ${cities.country}`));
+    dispatch(
+      inputData(`${cities?.name}, ${cities?.state}, ${cities?.country}`)
+    );
     dispatch(loadingShow(true));
 
     setTimeout(() => {
-      navigate(`/${cities.lat},${cities.lon}`);
+      navigate(`/${cities?.lat},${cities?.lon}`);
       dispatch(dropDownShow(false));
       dispatch(loadingShow(false));
       dispatch(inputData(""));
@@ -41,7 +43,7 @@ const DropDownData = ({
       `}
     >
       <p className="text-font-4 leading-[16px] text-BaseGray">
-        {cities.name}, {cities.state}, {cities.country}
+        {cities?.name}, {cities?.state}, {cities?.country}
       </p>
     </button>
   );
