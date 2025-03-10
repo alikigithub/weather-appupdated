@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import weatherDetailSlice from "./slice/weatherDetail";
-import citySearch from "./slice/citySearch";
+import weatherDetailSlice from "../slice/weatherDetail";
+import citySearch from "../slice/citySearch";
 import { useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({

@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { cityDataSearch, CityList } from "../../../type/type";
-import getcity from "../../../api/citySearch";
+import { cityDataSearch, CityList } from "../../type/type";
+import getcity from "../../api/citySearch";
 export const fetchCityData = createAsyncThunk(
   "city/detail",
   async (city: string) => {
@@ -14,6 +14,7 @@ export const fetchCityData = createAsyncThunk(
     }
   }
 );
+
 const initialState: cityDataSearch = {
   citylist: [] as CityList,
   status: "pending",

@@ -2,11 +2,10 @@ import {
   dropDownShow,
   inputData,
   loadingShow,
-} from "../redux/store/slice/citySearch";
+} from "../store/slice/citySearch";
 import { dropDownType } from "../type/type";
 import { useNavigate } from "react-router-dom";
-import { useAppDispatch } from "../redux/store/store";
-
+import { useAppDispatch } from "../store/store/store";
 const DropDownData = ({
   cities,
   index,

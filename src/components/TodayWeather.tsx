@@ -17,16 +17,14 @@ const TodayWeather = () => {
   const toogleUnit: string = unit === "C" ? "F" : "C";
 
   return (
-    <div className="flex justify-center flex-col items-center">
-      <div className="lg:w-[550px]  md:w-[664px] w-[320px]   md:h-[280px] h-[226px]  rounded-[12px] bg-fullgray lg:mt-[0px] mt-2  md:mt-4  xl:p-4 p-4 md:p-4">
-        <div className="h-[62px] p-[12px] md:flex md:show hidden">
-          <p className="  text-[16px] text-headGray ">
-            Today's weather details
-          </p>
+    <div className="w-full lg:mt-0 mt-2 flex justify-center flex-col items-center">
+      <div className="w-full rounded-[12px] bg-fullgray p-4 md:p-4">
+        <div className="p-[12px] md:flex md:show hidden">
+          <p className="text-[16px] text-headGray ">Today's weather details</p>
         </div>
         <div>
-          <ol>
-            <li className="w-full h-[56px]   border-b-[1px] border-darkgray flex justify-between items-center mt-[-20px]">
+          <ol className="mt-5">
+            <li className="w-full border-b-[1px] border-darkgray flex justify-between items-center">
               <div className="flex items-center space-x-2">
                 <img
                   className="md:h-[32px] h-[22px] md:w-[32px] w-[22px]"
@@ -46,7 +44,7 @@ const TodayWeather = () => {
                 </p>
               </div>
             </li>
-            <li className="w-full h-[56px]   border-b-[1px] border-darkgray flex justify-between items-center ">
+            <li className="w-full mt-5 border-b-[1px] border-darkgray flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img
                   className="md:h-[32px] h-[22px] md:w-[32px] w-[22px]"
@@ -63,7 +61,7 @@ const TodayWeather = () => {
                 </p>
               </div>
             </li>
-            <li className="w-full h-[56px]   border-b-[1px] border-darkgray flex justify-between items-center ">
+            <li className="w-full mt-5 border-b-[1px] border-darkgray flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img
                   className="md:h-[32px] h-[22px] md:w-[32px] w-[22px]"
@@ -80,7 +78,7 @@ const TodayWeather = () => {
                 </p>
               </div>
             </li>
-            <li className="w-full h-[56px]    flex justify-between items-center ">
+            <li className="w-full mt-5 flex justify-between items-center ">
               <div className="flex items-center space-x-2">
                 <img
                   className="md:h-[32px] h-[22px] md:w-[32px] w-[22px]"

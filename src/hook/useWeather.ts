@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchWeatherDetail } from "../redux/store/slice/weatherDetail";
 import { useEffect } from "react";
-import { AppRootState, useAppDispatch } from "../redux/store/store";
+import { AppRootState, useAppDispatch } from "../store/store/store";
 import { createSelector } from "reselect";
 
 const selectWeatherDetail = createSelector(

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAppDispatch } from "../redux/store/store";
+import { useAppDispatch } from "../store/store/store";
 import {
   inputData,
   loadingShow,

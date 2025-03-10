@@ -1,4 +1,4 @@
-import { useAppSelector } from "../redux/store/store";
+import { useAppSelector } from "../store/store/store";
 import { CityList } from "../type/type";
 
 export const useCitySearch = () => {

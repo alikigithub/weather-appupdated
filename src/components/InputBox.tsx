@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import CityDropDown from "./CityDropDown";
 import icons from "../assets/Icons.png";
-import { useAppDispatch } from "../redux/store/store";
+import { useAppDispatch } from "../store/store/store";
 import { useCitySearch } from "../hook/useCitySearch";
 import {
   dropDownShow,
   fetchCityData,
   inputData,
-} from "../redux/store/slice/citySearch";
+} from "../store/slice/citySearch";
 import { useHandleKeys } from "../hook/useHandleKeys";
 
 const InputBox = () => {
@@ -35,7 +35,7 @@ const InputBox = () => {
     <div>
       <div className="relative">
         <input
-          className="xl:w-[564px] md:w-[570px] w-[250px] h-[56px] rounded-[8px] text-white bg-darkgray focus:outline-none p-4"
+          className="xl:w-[564px] w-full h-[56px] rounded-[8px] text-white bg-darkgray focus:outline-none p-4"
           type="text"
           placeholder="Search Location..."
           value={cityName || ""}
