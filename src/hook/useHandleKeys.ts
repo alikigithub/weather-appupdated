@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useAppDispatch } from "../store/store/store";
-import {
-  inputData,
-  loadingShow,
-  dropDownShow,
-} from "../redux/store/slice/citySearch";
+
 import { useNavigate } from "react-router-dom";
 import { CityList } from "../type/type";
+import {
+  dropDownShow,
+  inputData,
+  loadingShow,
+} from "../store/slice/citySearch";
 
 export const useHandleKeys = (citylist: CityList) => {
   const [handleIndex, sethandleIndex] = useState<number>(-1);

@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { unitConvert } from "../redux/store/slice/weatherDetail";
+import { unitConvert } from "../store/slice/weatherDetail";
 
 export const useTemprature = () => {
   const dispatch = useDispatch();
